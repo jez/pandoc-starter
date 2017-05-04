@@ -8,31 +8,20 @@
 #   the actual value of the TARGET variable.
 #
 #
-# Compile the book:
+# make                  Compile all *.md files to PDFs
+# make <filename>.pdf   Compile <filename>.md to a PDF
+# make <filename>.tex   Generate the intermediate LaTeX for <filename>.md
 #
-#     make
+# make view             Compile $(TARGET).md to a PDF, then view it
+# make again            Force everything to recompile
 #
-# Compile the LaTeX that Pandoc uses to generate a PDF:
+# make clean            Get rid of all intermediate generated files
+# make veryclean        Get rid of ALL generated files:
 #
-#     make $(TARGET).tex
-#
-# Compile <filename>.tex to a PDF:
-#
-#     Not supported. Look up the documentation for `pdflatex`
-#
-# Compile $(TARGET).md to a PDF, then view the compiled PDF:
-#
-#     make view
-#
-# Get rid of all intermediate generated files:
-#
-#     make clean
-#
-# Get rid of ALL generated files:
-#
-#     make veryclean
+# make print            Send $(TARGET).pdf to the default printer:
 #
 # ============================================================================
+
 
 TARGET = sample
 

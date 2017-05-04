@@ -8,45 +8,17 @@
 #   the actual value of the TARGET variable.
 #
 #
-# Compile all *.md files to PDFs:
+# make                  Compile all *.md files to PDFs
+# make <filename>.pdf   Compile <filename>.md to a PDF
+# make <filename>.tex   Generate the intermediate LaTeX for <filename>.md
 #
-#     make
+# make view             Compile $(TARGET).md to a PDF, then view it
+# make again            Force everything to recompile
 #
-# Compile <filename>.md to a PDF:
+# make clean            Get rid of all intermediate generated files
+# make veryclean        Get rid of ALL generated files:
 #
-#     make <filename>.pdf
-#
-# Compile the LaTeX that Pandoc uses to generate a PDF for <filename>.md:
-#
-#     make <filename>.tex
-#
-# Compile <filename>.tex to a PDF:
-#
-#     Not supported. Look up the documentation for `pdflatex`
-#
-# Compile $(TARGET).md to a PDF, then view the compiled PDF:
-#
-#     make view
-#
-# Force everything to recompile:
-#
-#     make again
-#
-# Get rid of all intermediate generated files:
-#
-#     make clean
-#
-# Get rid of ALL generated files:
-#
-#     make veryclean
-#
-# Copy $(TARGET).pdf to the parent directory (sometimes useful):
-#
-#     make submit
-#
-# Send $(TARGET).pdf to the default printer:
-#
-#     make print
+# make print            Send $(TARGET).pdf to the default printer:
 #
 # ============================================================================
 
@@ -83,9 +55,6 @@ veryclean: clean
 
 view: $(TARGET).pdf
 	if [ "Darwin" = "$(shell uname)" ]; then open $(TARGET).pdf ; else evince $(TARGET).pdf ; fi
-
-submit: $(TARGET).pdf
-	cp $(TARGET).pdf ../
 
 print: $(TARGET).pdf
 	lpr $(TARGET).pdf
