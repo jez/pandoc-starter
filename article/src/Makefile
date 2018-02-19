@@ -31,7 +31,7 @@ PANDOC_FLAGS =\
 	-t latex \
 
 LATEX_FLAGS = \
-	--latex-engine=xelatex
+	--pdf-engine=xelatex
 
 all: $(patsubst %.md,%.pdf,$(wildcard *.md))
 

@@ -33,7 +33,7 @@ PANDOC_FLAGS =\
 	-t latex \
 
 LATEX_FLAGS = \
-	--latex-engine=xelatex
+	--pdf-engine=xelatex
 
 all: $(TARGET).pdf
 

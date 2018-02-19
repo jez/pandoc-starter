@@ -30,7 +30,7 @@ PANDOC_FLAGS =\
 	-t beamer \
 
 LATEX_FLAGS = \
-	--latex-engine=xelatex
+	--pdf-engine=xelatex
 
 all: $(patsubst %.md,%.pdf,$(wildcard *.md))
 
