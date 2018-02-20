@@ -31,7 +31,14 @@ PANDOC_FLAGS =\
 	-t latex \
 
 LATEX_FLAGS = \
-	--latex-engine=pdflatex
+
+PDF_ENGINE = pdflatex
+PANDOCVERSIONGTEQ2 := $(shell expr `pandoc --version | grep ^pandoc | sed 's/^.* //g' | cut -f1 -d.` \>= 2)
+ifeq "$(PANDOCVERSIONGTEQ2)" "1"
+    LATEX_FLAGS += --pdf-engine=$(PDF_ENGINE)
+else
+    LATEX_FLAGS += --latex-engine=$(PDF_ENGINE)
+endif
 
 all: $(patsubst %.md,%.pdf,$(wildcard *.md))
 
