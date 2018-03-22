@@ -57,6 +57,6 @@ veryclean: clean
 	rm -f $(TARGET).pdf
 
 view: $(TARGET).pdf
-	if [ "Darwin" = "$(shell uname)" ]; then open $(TARGET).pdf ; else evince $(TARGET).pdf ; fi
+	if [ "Darwin" = "$(shell uname)" ]; then open $(TARGET).pdf ; else xdg-open $(TARGET).pdf ; fi
 
 .PHONY: all clean veryclean view
