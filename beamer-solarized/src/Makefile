@@ -61,7 +61,7 @@ veryclean: clean
 	rm -f *.pdf
 
 view: $(TARGET).pdf
-	if [ "Darwin" = "$(shell uname)" ]; then open $(TARGET).pdf ; else evince $(TARGET).pdf ; fi
+	if [ "Darwin" = "$(shell uname)" ]; then open $(TARGET).pdf ; else xdg-open $(TARGET).pdf ; fi
 
 print: $(TARGET).pdf
 	lpr $(TARGET).pdf
