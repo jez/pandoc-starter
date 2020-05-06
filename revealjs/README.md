@@ -29,6 +29,9 @@ for more information.
     - Start a new slide with `#`
 1. Read the [Makefile's documentation][Makefile].
 
+The sample presentation is already built to HTML. Run `python -m http.server` to
+preview it locally.
+
 [Makefile]: src/Makefile
 
 ## License
