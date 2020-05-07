@@ -3,11 +3,6 @@ title: 'My Title'
 author: 'Jake Zimmerman (**`@jez`**)'
 date: 'May 5, 2020'
 
-# Chrome will block the speaker notes functionality unless
-# this presentation is also served from an HTTPS URL. To get
-# around this, consider using a local version of Reveal.js:
-# https://github.com/jgm/pandoc/wiki/Using-pandoc-to-produce-reveal.js-slides
-# TODO(jez) Automate this
 revealjs-url: 'https://revealjs.com'
 
 # This theme doesn't actually exist, but the pandoc template

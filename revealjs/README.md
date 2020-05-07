@@ -27,12 +27,29 @@ for more information.
     - Be sure to adjust the information like the `title` and `author` at the top
       of the file
     - Start a new slide with `#`
-1. Read the [Makefile's documentation][Makefile].
+1. Run `make watch` to build the site and watch for changes.
 
-The sample presentation is already built to HTML. Run `python -m http.server` to
-preview it locally.
+   The sample presentation is already built. If you just want to preview it and
+   don't want to install Watchman, run `python -m http.server` in `src/`.
+
+1. View the presentation at <http://127.0.0.1:8000>.
+
+Read the [Makefile's documentation][Makefile] for more commands.
 
 [Makefile]: src/Makefile
+
+To use speaker notes, you **must** either serve the presentation from HTTPS or
+use the loopback address, i.e., <http://127.0.0.1:8000>. [Read more about why
+and alternatives here][https].
+
+[https]: https://letsencrypt.org/docs/certificates-for-localhost/
+
+You can generate a PDF from your slides (in Chrome) by tacking `?print-pdf` onto
+the URL and using the browser's print diaglog:
+
+- <http://127.0.0.1:8000/?print-pdf>
+
+Note the query string must come **before** the `#slide-number`.
 
 ## License
 
