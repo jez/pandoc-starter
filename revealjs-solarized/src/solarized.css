@@ -305,6 +305,13 @@ body {
   color: var(--solarized-blue);
 }
 
+/* --- Print background ----------------------- */
+@media print {
+  .backgrounds {
+    background-color: var(--stripe-base3);
+  }
+}
+
 /* --- Slide numbers -------------------------- */
 /* These aren't usually meant to be changed. */
 
