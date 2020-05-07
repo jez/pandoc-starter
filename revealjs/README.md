@@ -1,4 +1,4 @@
-# beamer
+# revealjs
 
 These starter files can be used to generate a simple slide deck, using
 [Reveal.js](https://revealjs.com/#/).
