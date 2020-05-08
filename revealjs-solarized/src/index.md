@@ -6,7 +6,7 @@ date: 'May 5, 2020'
 revealjs-url: 'https://revealjs.com'
 
 css:
-- 'solarized.css'
+- 'css/solarized.css'
 
 # See `pandoc -D revealjs` to see more options to the revealjs template.
 
@@ -25,7 +25,7 @@ transition: 'none'
 slideNumber: '\"c/t\"'
 
 include-after:
-- '<script src="toggle-theme.js"></script>'
+- '<script src="js/toggle-theme.js"></script>'
 ---
 
 ## Using Reveal.js
