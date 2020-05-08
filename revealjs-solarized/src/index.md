@@ -8,8 +8,6 @@ revealjs-url: 'https://revealjs.com'
 css:
 - 'css/solarized.css'
 
-# See `pandoc -D revealjs` to see more options to the revealjs template.
-
 # These are all strings because they'll be interpolated into
 # JS and then become JS values.
 progress: 'true'
