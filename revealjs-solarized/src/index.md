@@ -5,16 +5,6 @@ date: 'May 5, 2020'
 
 revealjs-url: 'https://revealjs.com'
 
-# This theme doesn't actually exist, but the pandoc template
-# defaults to black.css if no theme is given. We have our
-# own theme that's not in the Reveal.js distribution, so we
-# pretend that empty.css exists. The browser will attempt to
-# fetch this and fail, and it will be like there was no
-# theme.
-#
-# TODO(jez) https://github.com/jgm/pandoc/pull/6342
-theme: empty
-
 css:
 - 'solarized.css'
 
