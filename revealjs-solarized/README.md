@@ -34,6 +34,9 @@ for more information.
 
 1. View the presentation at <http://127.0.0.1:8000>.
 
+   If you just want to see a live example without first cloning this repo:
+   <https://jez.io/talks/slides/revealjs-solarized/#/title-slide>
+
 Read the [Makefile's documentation][Makefile] for more commands.
 
 [Makefile]: src/Makefile
