@@ -36,4 +36,4 @@ clean:
 
 .PHONY: watch
 watch: index.html serve.sh
-	./serve.sh --watch
+	./serve.sh
