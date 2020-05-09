@@ -308,7 +308,7 @@ body {
 /* --- Print background ----------------------- */
 @media print {
   .backgrounds {
-    background-color: var(--stripe-base3);
+    background-color: var(--solarized-base3);
   }
 }
 
