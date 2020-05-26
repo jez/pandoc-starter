@@ -4,7 +4,7 @@ author: 'Jake Zimmerman (**`@jez`**)'
 date: 'May 5, 2020'
 
 # See `pandoc -D revealjs` to see more options to the revealjs template.
-revealjs-url: 'https://revealjs.com'
+revealjs-url: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0'
 ---
 
 # Section Title

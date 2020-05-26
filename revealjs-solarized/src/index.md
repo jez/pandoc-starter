@@ -3,7 +3,7 @@ title: 'My Title'
 author: 'Jake Zimmerman (**`@jez`**)'
 date: 'May 5, 2020'
 
-revealjs-url: 'https://revealjs.com'
+revealjs-url: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0'
 
 css:
 - 'css/solarized.css'
