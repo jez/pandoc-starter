@@ -35,23 +35,21 @@
 }
 
 /* --- Global styles -------------------------- */
-body {
+.reveal-viewport {
   background-color: var(--solarized-base3);
 }
 
 .reveal {
   font-family: var(--main-font);
+  /* Normally body copy in Solarized Light is base00,
+   * but I like it darker. */
+  color: var(--solarized-base02);
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   font-size: var(--main-font-size);
   font-weight: normal;
-
-  /* Normally body copy in Solarized Light is base00,
-   * but I like it darker. */
-  color: var(--solarized-base02);
-
-  cursor: initial;
 }
 
 .reveal .slides section,
@@ -68,6 +66,11 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
+  font-family: var(--main-font);
+  /* Normally body copy in Solarized Light is base00,
+   * but I like it darker. */
+  color: var(--solarized-base02);
+
   margin: 0 0 var(--block-margin) 0;
 
   text-transform: none;
