@@ -4,7 +4,9 @@ author: 'Jake Zimmerman (**`@jez`**)'
 date: 'May 5, 2020'
 
 # See `pandoc -D revealjs` to see more options to the revealjs template.
-revealjs-url: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0'
+revealjs-url: 'https://unpkg.com/reveal.js@^3'
+# After pandoc v2.9.2.1, the default reveal.js template assumes version 4
+# revealjs-url: 'https://unpkg.com/reveal.js@^4'
 ---
 
 # Section Title
