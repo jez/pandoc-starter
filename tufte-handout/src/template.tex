@@ -215,6 +215,9 @@ $if(institute)$
 \institute{$for(institute)$$institute$$sep$ \and $endfor$}
 $endif$
 \date{$date$}
+% fix xetex issues, see https://github.com/Tufte-LaTeX/tufte-latex/issues/64
+\renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
+\renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
 
 \begin{document}
 $if(title)$
