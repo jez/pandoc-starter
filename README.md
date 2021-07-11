@@ -8,6 +8,11 @@ example comes with:
 - A preview of the document
 - The relevant starter files (usually Markdown, sometimes LaTeX)
 
+## Other projects
+
+- [`tufte-pandoc-css`](https://github.com/jez/tufte-pandoc-css)
+- [`pandoc-markdown-css-theme`](https://github.com/jez/pandoc-markdown-css-theme)
+
 ## License
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://jez.io/MIT-LICENSE.txt)
